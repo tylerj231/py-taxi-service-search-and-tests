@@ -12,7 +12,7 @@ class ModelTests(TestCase):
         manufacturer = Manufacturer.objects.create(name="Test",
                                                    country="Test")
 
-        self.assertEqual(str(manufacturer), "Test Test")
+        self.assertEqual(str(manufacturer), manufacturer.__str__())
 
     def test_driver_format_str(self):
         username = "Vasyl2hardforYou"

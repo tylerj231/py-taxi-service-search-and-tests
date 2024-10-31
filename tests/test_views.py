@@ -14,10 +14,10 @@ class TestSearchFunctionDriver(TestCase):
 
 class TestSearchFunctionManufacturer(TestCase):
     def test_manufacturer_search_form_is_valid(self):
-        form_data = {"name": "test manufacturer",
-                     "country": "test country",
-                     }
+        form_data = {"name": "test manufacturer"}
+
         form = ManufacturerSearchForm(data=form_data)
+
         self.assertEqual(form.is_valid(), True)
 
 
