@@ -26,7 +26,3 @@ class TestSearchFunctionCar(TestCase):
         form_data = {"model": "test car"}
         form = CarSearchForm(data=form_data)
         self.assertEqual(form.is_valid(), True)
-
-
-
-
